@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: SpringSecurity
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bankconsole
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+
+
+security:
+  jwt:
+    secretKey: c6adbe527f0107a8079a11f55251b5c54f04bbd7e78bf9cd75d04153cb27628b
